@@ -12,6 +12,7 @@
     background-size: cover;
     position:relative
     
+    
 
 }
 nav{
@@ -32,11 +33,14 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    color: #fff;
 }
-.nav-links ul li a{
-    color: fff;
+
+.nav-links ul li {
+    color: #fff;
     text-decoration: none;
     font-size: 13px;
+    
 }
 .nav-links ul li::after{
     content: '';
@@ -49,13 +53,14 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
+   
 }
 .text-box{
     height: 200px;
     width: 400px;
     background: fff;
-
-    position: fixed;
+    color: yellow;
+    position: relative;
     top: 50%;
     left: 50%;
     margin-top: -100px;
@@ -83,6 +88,11 @@ nav img{
 
 
 @media(max-width: 700px){
+    .knop:hover{
+        border: 1px solid #f44;
+        background:#f44 ;
+    }
+    
     .text-box h1{
         font-size: 62px;
     }
@@ -91,7 +101,7 @@ nav img{
     }
     .nav-links{
         position: absolute;
-        background: rgb(117, 182, 100);
+        
         height: 100vh;
         width: 200px;
         top: 0;
@@ -111,6 +121,7 @@ nav img{
     .nav-links ul{
         padding: 30px;
     }
+    
 }
 
 /*-----projecten-----*/

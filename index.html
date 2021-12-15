@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dit ben ik</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     
 </head>
-<body>
-    <div class="background"></div>
-
-    </div>
-    <selection class="header">
-        <nav>
-
-  
-            
-            <div class="nav-links">
-                <i class="fas fa-times onclick="hideMenu"></i>
-                <ul>
-                    <li><a href=""></a>HOME</li>
-                    <li><a href=""></a>ABOUT</li>
-                    <li><a href=""></a>COURSE</li>
-                    <li><a href=""></a>BLOG</li>
-                    <li><a href=""></a>CONTACT</li>
-
-
-                </ul>
-                <i class="fas fa-bars" onclick="showMenu"></i>
-
+<body style="padding-top: 10px;">
+    <div class="background">
+        <selection class="header">
+            <nav>
+    
+      
+                
+                <div class="nav-links">
+                   
+                    <ul>
+                        <li><a href=""></a>HOME</li>
+                        <li><a href=""></a>ABOUT</li>
+                        <li><a href=""></a>COURSE</li>
+                        <li><a href=""></a>BLOG</li>
+                        <li><a href=""></a>CONTACT</li>
+    
+    
+                    </ul>
+                     
+    
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>the world</h1>
+                <p>(globe)</p>
+                <a href="" class="knop">discover</a>
+    
             </div>
-        </nav>
-        <div class="text-box">
-            <h1>the world</h1>
-            <p>(globe)</p>
-            <a href="" class="knop">discover</a>
-
-        </div>
-
-    </selection>
+    
+        </selection>
+       
+    </div>
+   
     
     <!--kaartjes--->
     <section class="projecten">
@@ -49,21 +51,21 @@
 
           <div class="row">
           <div class="course-col">
-              <h3>project 1</h3>
+             <a href="project1.html"><button id="project1" class="knop" style="background-color: black;" > <h3>project 1</h3></button></a> 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
                 soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
                 nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
 
           </div>
           <div class="course-col">
-            <h3>project 2</h3>
+            <a href="project2.html"><button id="project2" class="knop" style="background-color: black;"><h3>project 2</h3></button></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
               soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
               nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
 
         </div>
         <div class="course-col">
-            <h3>project 3</h3>
+            <a href="project3.html"><button id="project3" class="knop" style="background-color: black;"><h3>project 3</h3></button></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
               soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
               nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
@@ -71,13 +73,17 @@
         </div>
     </div>
     </section>
-<!---- dit is blijkbaar javascript-->
+
+    
+
+
+
     <script>
-         var navLinks = document.getElementById("navLinks")
+         var navLinks = document.getElementsByClassName("nav-links");
 
         function showMenu(){
            navLinks.style.right = "0"
-
+                alert("Hello here");
         }
         function hideMenu(){
            navLinks.style.right = "-200px"
@@ -100,6 +106,7 @@
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
+        
 
     }
 </style>
