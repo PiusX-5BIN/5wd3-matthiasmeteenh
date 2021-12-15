@@ -6,11 +6,12 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7))url(images/banner.jpg)
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7))url(https://www.sas.com/no_no/insights/articles/analytics/using-data-to-change-the-world/_jcr_content/socialShareImage.img.598ccc6fb8d5430f90c67de3671f7a65.png)
     ;
     background-position: center;
     background-size: cover;
     position:relative
+    
 
 }
 nav{
@@ -59,4 +60,106 @@ nav img{
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;
+}
+
+.knop{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff; 
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.knop:hover{
+    border: 1px solid #f44;
+    background:#f44 ;
+}
+  na .fa{
+     display: none;
+  }  
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 62px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(117, 182, 100);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*-----projecten-----*/
+
+.projecten{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+  h1{
+      font-size: 36px;
+      font-weight: 6OO;
+
+  }  
+p{
+    color: #c09e9b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0pxn rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+   .row{
+       flex-direction: column;
+   }
 }

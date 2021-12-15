@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dit ben ik</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
 </head>
 <body>
+    <div class="background"></div>
+
+    </div>
     <selection class="header">
         <nav>
-            <a href="index.html"><img src="https://www.isthismoviesuitable.com/wp-content/uploads/2013/02/Fellowship-Of-The-Ring-movie-still.jpg" alt="foto logo"  ></a>
+
+  
+            
             <div class="nav-links">
+                <i class="fas fa-times onclick="hideMenu"></i>
                 <ul>
                     <li><a href=""></a>HOME</li>
                     <li><a href=""></a>ABOUT</li>
@@ -21,19 +29,79 @@
 
 
                 </ul>
-                
+                <i class="fas fa-bars" onclick="showMenu"></i>
 
             </div>
         </nav>
         <div class="text-box">
-            <h1>titel</h1>
-            <p>met text</p>
-            <a href="">visit us to know more</a>
+            <h1>the world</h1>
+            <p>(globe)</p>
+            <a href="" class="knop">discover</a>
 
         </div>
 
     </selection>
+    
+    <!--kaartjes--->
+    <section class="projecten">
+      <h1>projecten</h1>
+          <p>text</p>
+
+          <div class="row">
+          <div class="course-col">
+              <h3>project 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+                soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
+                nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
+
+          </div>
+          <div class="course-col">
+            <h3>project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+              soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
+              nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
+
+        </div>
+        <div class="course-col">
+            <h3>project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+              soluta natus, doloribus autem quibusdam doloremque odit vitae eos quidem ipsum
+              nostrum sapiente assumenda quas, fugit sint obcaecati accusamus rem tempore.</p>
+
+        </div>
+    </div>
+    </section>
+<!---- dit is blijkbaar javascript-->
+    <script>
+         var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+           navLinks.style.right = "0"
+
+        }
+        function hideMenu(){
+           navLinks.style.right = "-200px"
+
+        }
+    </script>
+
 
     
 </body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .background{
+        background-image: url(https://www.sas.com/no_no/insights/articles/analytics/using-data-to-change-the-world/_jcr_content/socialShareImage.img.598ccc6fb8d5430f90c67de3671f7a65.png);
+        
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+</style>
+
 </html>
