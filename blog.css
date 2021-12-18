@@ -14,28 +14,28 @@ body {
     background-color: beige;
   }
   
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
+  /* om de blog mooi te maken heb ik ze verdeelt in 2 kanten */
+  /* Dit is de linkerkolom */
   .leftcolumn {
     float: left;
     width: 75%;
   }
   
-  /* Right column */
+  /* rechterkolom */
   .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
   }
   
-  /* Fake image */
+  /* dummy foto */
   .fakeimg {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
   }
   
-  /* Add a card effect for articles */
+  /* cards voor de blogs op te schrijven  */
   .card {
     background-color: white;
     padding: 20px;
@@ -44,7 +44,7 @@ body {
     background-color: beige;
   }
   
-  /* Clear floats after the columns */
+  
   .row:after {
     content: "";
     display: table;
@@ -59,7 +59,8 @@ body {
     margin-top: 20px;
   }
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  /* als de site naar mobile gaat */
+  /*ik blijf erbij dat alles veranderen belachelijk veel werk zou zijn geweest*/
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
       width: 100%;

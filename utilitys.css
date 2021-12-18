@@ -43,7 +43,9 @@
     margin-top: -100px;
     margin-left: -200px;
 }
-
+/* een relekwie van de vorige versie van de site.
+Er zat een knop in het midden, Ik ben van plan dit stuke code bij te houden voor waneer 
+ik een betere plaats heb voor een knop*/
 .knop{
     display: inline-block;
     text-decoration: none;

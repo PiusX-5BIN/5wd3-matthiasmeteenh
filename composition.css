@@ -72,6 +72,9 @@ h3{
 .course-col:hover{
     box-shadow: 0 0 20px 0pxn rgba(0,0,0,0.2);
 }
+/*hopenlijk word het feit dat de website niet uit mobile-first is ontwikeld niet al te hard
+bestraft, nu heb ik de mobiele versie met @media moeten doen. Alle stijlregels aanpassen was
+een knoeiwerk dus heb ik de oude pagina terug gehaald en vanaf hier bijgewerk*/
 @media(max-width: 700px){
    .row{
        flex-direction: column;
