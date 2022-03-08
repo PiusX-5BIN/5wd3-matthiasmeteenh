@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSME</title>
+    <!--uitwendige links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+     <!--inwendige links-->
+      <link rel="stylesheet" href="composition.css">
+      <link rel="stylesheet" href="utilitys.css">
+
+    
+</head>
+<body style="background-color: burlywood;">
+    <div class="background">
+        <selection class="header">
+            <nav>
+    
+      
+                <!---menu balk, deze heefd geen echte funcie omdat de website uit nog niet 
+                veel delen bestaat-->
+                <div class="nav-links">
+                   
+                    <ul>
+                        <li><a href=""></a>HOME</li>  
+                        <li><a href=""></a>MEZELF</li>
+                        <li><a href=""></a>COURSE</li>
+                        <li><a href="blog.html"></a>BLOG</li>
+                        <li><a href=""></a>CONTACT</li>
+    
+    
+                    </ul>
+                     
+    
+                </div>
+            </nav>
+            <!---text in het midden van de begin-afbeelding-->
+            <div class="text-box">
+                <h1>Matthias</h1>
+                <p class="middel-text">Een site als geen ander</p>
+                
+    
+            </div>
+    
+        </selection>
+       
+    </div>
+   
+    
+    <!--kaartjes met projecten--->
+    <section class="projecten">
+      <h1>projecten</h1>
+          <p>text</p>
+
+          <div class="row">
+          <div class="course-col">
+             <a href="project1.html"><button id="project1" class="knop" style="background-color: black;" > <h3>project 1</h3></button></a> 
+              <p>Mijn eerste echte project, zoals je zult merken bakte ik er weinig van.
+                  Alles ging tergend traag en het enige wat ik kon was paragrafen op een blanco pagina zetten.
+              </p>
+
+          </div>
+          <div class="course-col">
+            <a href="project2.html"><button id="project2" class="knop" style="background-color: black;"><h3>project 2</h3></button></a>
+            <p>Oke dit was mijn 2de eigen onderneming. Best spannend allemaal
+                Maar stel je er niet te veel bij voor, Ik ben en blijf een analfabeet in informatica.
+                Hier mochten we echter een template gebruiken, (wat ik graag aannam).
+                Al met al verassend leuk als je gewoon kunt invullen.
+                
+            </p>
+
+        </div>
+        <div class="course-col">
+            <a href="project3.html"><button id="project3" class="knop" style="background-color: black;"><h3>project 3</h3></button></a>
+            <p>als je deze knop indrukt ga je naar niets.
+                maar via deze link --> https://www.zalmswim.com/#!/ kom je op de website van een fammilielid.
+                Hij is bijhoorlijk goed met computers en ik heb hem gevraagd om me bij het komende trimester
+                een helpende hand voor te schieten. Met zijn hulp hoop ik de lessen beter te begrijpen.
+
+        </div>
+    </div>
+    </section>
+
+    
+
+        <!--om het menu te openen en sluiten vanaf de zijkant-->
+
+    <script>
+         var navLinks = document.getElementsByClassName("nav-links");
+
+        function showMenu(){
+           navLinks.style.right = "0"
+                alert("menu");
+        }
+        function hideMenu(){
+           navLinks.style.right = "-200px"
+
+        }
+    </script>
+
+
+    
+</body>
+
+       <!--achtergrond foto-->
+       <!--in de mobile versie laat ik de helft zien met de zon langs links-->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .background{
+        background-image: url(https://www.sas.com/no_no/insights/articles/analytics/using-data-to-change-the-world/_jcr_content/socialShareImage.img.598ccc6fb8d5430f90c67de3671f7a65.png);
+        
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+    }
+</style>
+<style>
+
+
+</style>
+
+</html>
